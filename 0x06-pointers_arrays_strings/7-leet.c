@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * leet - encode into 1337speak
  * @n: input value
@@ -8,19 +7,19 @@
 
 char *leet(char *n)
 {
-	int j, k;
+	int i, j;
 	char s1[] = "aAeEoOtTiI";
 	char s2[] = "4433007711";
 
-	for (j = 0; n[j] != '\0'; j++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (k = 0; j < 10; k++)
+		for (j = 0; j < 10; j++)
 		{
-			if (n[j] == s1[k])
+			if (n[i] == s1[j])
 			{
-				n[j] = s2[k];
+				n[i] = s2[j];
 			}
 		}
 	}
-	return (n);
+	return (0);
 }
