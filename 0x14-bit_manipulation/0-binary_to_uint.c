@@ -2,7 +2,7 @@
 
 /**
  * binary_to_unit - Converts binary num to unsigned int
- * @b: 0 and 1 chars pointer
+ * @b: pointing to a string of 0 and 1 chars
  * Return: Converted num or 0
  */
 
@@ -20,7 +20,6 @@ unsigned int binary_to_uint(const char *b)
 		if (b[j] != '0' && b[j] != '1')
 			return (0);
 	}
-
 	for (j = 0; b[j] != '\0'; j++)
 	{
 		k <<= 1;
